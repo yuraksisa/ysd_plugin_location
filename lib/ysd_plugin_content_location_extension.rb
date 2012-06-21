@@ -13,7 +13,7 @@ module Huasi
     #
     def content_element_info(context={})
       app = context[:app]
-      {:id => 'content_location', :description => "#{app.t.content.content_location.description}"} 
+      {:id => 'location', :description => "#{app.t.content.content_location.description}"} 
     end
 
     #
