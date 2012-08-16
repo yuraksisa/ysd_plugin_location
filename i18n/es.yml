@@ -1,3 +1,5 @@
 content:
   content_location:
     description: Dirección
+aspect:
+  location: Dirección
