@@ -11,7 +11,7 @@ module Huasi
     # @param [Hash] the context
     # @param [Object] the element
     #
-    def custom(context={}, element)
+    def custom(context={}, element, aspect_model)
     
       app = context[:app]
       
@@ -26,7 +26,7 @@ module Huasi
     # @param [Hash] context
     # @param [Object] object
     #
-    def custom_extension(context={}, element)
+    def custom_extension(context={}, element, aspect_model)
 
       app = context[:app]
     
@@ -48,7 +48,7 @@ module Huasi
     #
     # Renders the tab
     #
-    def element_form_tab(context={})
+    def element_form_tab(context={}, aspect_model)
       app = context[:app]
       info = element_info(context)
       render_tab("#{info[:id]}_form", info[:description])
@@ -57,7 +57,7 @@ module Huasi
     #
     # Add fields to edit the location information in the content form
     #
-    def element_form(context={})
+    def element_form(context={}, aspect_model)
       
       app = context[:app]
       
@@ -69,7 +69,7 @@ module Huasi
     #
     # Renders the tab
     #
-    def element_template_tab(context={})
+    def element_template_tab(context={}, aspect_model)
       app = context[:app]
       info = element_info(context)
       render_tab("#{info[:id]}_template", info[:description])
@@ -78,7 +78,7 @@ module Huasi
     #
     # Show the location information in the content render
     #
-    def element_template(context={})
+    def element_template(context={}, aspect_model)
     
        app = context[:app]
        
