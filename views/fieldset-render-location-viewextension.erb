@@ -1,0 +1,16 @@
+<script type="text/javascript">
+  
+  $(window).load( function(event) {
+        
+    var location = { address : '<%="#{element.location_street}+#{element.location_number},+#{element.location_city},+#{element.location_country}"%>',
+                     title: '<%="#{element.title}"%>',
+                     description : '<%= "<h1>#{element.title}</h1> #{element.location_street} #{element.location_number} <br/> #{element.location_city}" %>'
+                   };
+                   
+    var map = new YSD.LocationViewer('location-map');
+    map.setCenter(location);
+    map.addLocation(location);
+  
+  });
+    
+</script>

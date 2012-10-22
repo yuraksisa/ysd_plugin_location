@@ -5,26 +5,7 @@ require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
 #
 module Huasi
 
-  class ContentLocationExtension < Plugins::ViewListener
-    include ContentManagerSystem::Support
-
-    # ========= Page Building ============
-
-    #
-    # It gets the scripts used by the module
-    #
-    # @param [Context]
-    #
-    # @return [Array]
-    #   An array which contains the css resources used by the module
-    #
-    def page_script(context={})
-    
-      ['https://maps.google.com/maps/api/js?sensor=false',
-       '/location/js/ysd.location.viewer.js']
-             
-    end    
-
+  class LocationExtension < Plugins::ViewListener
         
     # ========= Aspects ==================
     

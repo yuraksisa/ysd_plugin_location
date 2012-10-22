@@ -15,7 +15,7 @@ module Huasi
     
       app = context[:app]
       
-      renderer = UIFieldSetRender::FieldSetRender.new('location', app)
+      renderer = UI::FieldSetRender.new('location', app)
       renderer.render('view','',{:element => element})
     
     end      
@@ -30,7 +30,7 @@ module Huasi
 
       app = context[:app]
     
-      renderer = UIFieldSetRender::FieldSetRender.new('location', app)
+      renderer = UI::FieldSetRender.new('location', app)
       renderer.render('viewextension','',{:element => element})
     
     end       
@@ -61,7 +61,7 @@ module Huasi
       
       app = context[:app]
       
-      renderer = UIFieldSetRender::FieldSetRender.new('location', app)      
+      renderer = UI::FieldSetRender.new('location', app)      
       location_form = renderer.render('form', 'em')
     
     end
@@ -82,7 +82,7 @@ module Huasi
     
        app = context[:app]
        
-       renderer = UIFieldSetRender::FieldSetRender.new('location', app)      
+       renderer = UI::FieldSetRender.new('location', app)      
        location_template = renderer.render('view', 'em')
               
     end

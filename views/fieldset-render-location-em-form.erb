@@ -1,0 +1,30 @@
+        <div id="location_form">
+          <div class="formrow">
+            <label for="location_street" class="fieldtitle">Street</label>
+            <input type="text" maxlength="60" id="location_street" name="location_street" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_street %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_number" class="fieldtitle">Number</label>
+            <input type="text" maxlength="10" id="location_number" name="location_number" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_number %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_complement" class="fieldtitle">Complement</label>
+            <input type="text" maxlength="20" id="location_complement" name="location_complement" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_complement %>" <%% } %> />
+          </div>
+<div class="formrow">
+            <label for="location_city" class="fieldtitle">City</label>
+            <input type="text" maxlength="60" id="location_city" name="location_city" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_city %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_state" class="fieldtitle">State</label>
+            <input type="text" maxlength="60" id="location_state" name="location_state" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_state %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_country" class="fieldtitle">Country</label>
+            <input type="text" maxlength="50" id="location_country" name="location_country" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_country %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_zip" class="fieldtitle">Zip</label>
+            <input type="text" maxlength="10" id="location_zip" name="location_zip" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_zip %>" <%% } %> />
+          </div>
+        </div>  
