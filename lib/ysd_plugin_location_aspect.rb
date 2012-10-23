@@ -1,3 +1,5 @@
+require 'renders/ysd_ui_fieldset_render' unless defined?UI::FieldSetRender
+
 module Huasi
   #
   # Location aspect
@@ -15,7 +17,7 @@ module Huasi
     
       app = context[:app]
       
-      renderer = UI::FieldSetRender.new('location', app)
+      renderer = ::UI::FieldSetRender.new('location', app)
       renderer.render('view','',{:element => element})
     
     end      
@@ -30,7 +32,7 @@ module Huasi
 
       app = context[:app]
     
-      renderer = UI::FieldSetRender.new('location', app)
+      renderer = ::UI::FieldSetRender.new('location', app)
       renderer.render('viewextension','',{:element => element})
     
     end       
@@ -61,7 +63,7 @@ module Huasi
       
       app = context[:app]
       
-      renderer = UI::FieldSetRender.new('location', app)      
+      renderer = ::UI::FieldSetRender.new('location', app)      
       location_form = renderer.render('form', 'em')
     
     end
@@ -82,7 +84,7 @@ module Huasi
     
        app = context[:app]
        
-       renderer = UI::FieldSetRender.new('location', app)      
+       renderer = ::UI::FieldSetRender.new('location', app)      
        location_template = renderer.render('view', 'em')
               
     end
