@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "ysd_core_plugins"
   s.add_runtime_dependency "ysd_md_cms"
   s.add_runtime_dependency "ysd_md_fieldset"
-  s.add_runtime_dependency "ysd_ui_fieldset_renders"    
+  s.add_runtime_dependency "ysd_yito_core"    
   
 end

@@ -1,4 +1,5 @@
 require 'ysd-plugins_viewlistener' unless defined?Plugins::ViewListener
+require 'ysd_md_fieldset_location'
 
 #
 # Huasi Profile Extension
@@ -19,7 +20,7 @@ module Huasi
       app = context[:app]
       
       aspects = []
-      aspects << ::Plugins::Aspect.new(:location, app.t.aspect.location, [:entity], LocationAspectDelegate.new)
+      aspects << ::Plugins::Aspect.new(:location, app.t.aspect.location, FieldSet::Location, LocationAspectDelegate.new)
                                                
       return aspects
        
