@@ -17,9 +17,13 @@ module Huasi
     
       app = context[:app]
       
-      renderer = ::UI::FieldSetRender.new('location', app)
-      renderer.render('view','',{:element => element})
-    
+      if (not element.location_street.empty?) and (not element.location_city.empty?)
+        renderer = ::UI::FieldSetRender.new('location', app)
+        renderer.render('view','',{:element => element})
+      else
+        ''
+      end
+
     end      
     
     #

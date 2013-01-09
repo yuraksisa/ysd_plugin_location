@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = "ysd_plugin_location"
-  s.version = "0.1"
+  s.version = "0.1.2"
   s.authors = ["Yurak Sisa Dream"]
   s.date    = "2012-03-14"
   s.email   = ["yurak.sisa.dream@gmail.com"]
@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.summary = "Extension to manage location or address"
   
   s.add_runtime_dependency "ysd_core_plugins"
-  s.add_runtime_dependency "ysd_md_cms"
-  s.add_runtime_dependency "ysd_md_fieldset"
+  s.add_runtime_dependency "ysd_md_cms", ">= 0.2.0"
+  s.add_runtime_dependency "ysd_md_fieldset", ">= 0.2.0"
   s.add_runtime_dependency "ysd_yito_core"    
   
 end
