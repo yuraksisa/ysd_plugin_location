@@ -19,7 +19,7 @@ module Huasi
       
       if (not element.location_street.empty?) and (not element.location_city.empty?)
         renderer = ::UI::FieldSetRender.new('location', app)
-        renderer.render('view','',{:element => element})
+        renderer.render('view','',{:element => element, :show_title => false})
       else
         ''
       end

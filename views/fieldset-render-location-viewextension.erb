@@ -5,9 +5,9 @@ require(['jquery', 'YSDLocationViewer'],
         	
    $(window).load( function(event) {
         
-     var location = { address : '<%="#{element.location_street}+#{element.location_number},+#{element.location_city},+#{element.location_country}"%>',
+     var location = {address : '<%=element.location_full_address%>',
                      title: '<%="#{element.title}"%>',
-                     description : '<%= "<h1>#{element.title}</h1> #{element.location_street} #{element.location_number} <br/> #{element.location_city}" %>'
+                     description : '<%= "<h1>#{element.title}</h1> #{element.location_full_address}" %>'
                    };
                    
      var map = new LocationViewer('location-map');
