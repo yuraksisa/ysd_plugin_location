@@ -7,7 +7,7 @@ It defines the location aspect to edit/show location information
 Just include the gem dependency in your Gemfile and run bundle update
 
 ```ruby
-gem "ysd_plugin_integration"
+gem "ysd_plugin_location"
 ```
 
 A new aspect (location) will be accesible
