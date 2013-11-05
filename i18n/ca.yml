@@ -3,3 +3,13 @@ content:
     description: On
 aspect:
   location: Adreça
+location:
+  street: Carrer
+  number: Número
+  complement: Complement
+  city: Ciutat
+  state: Provincia
+  country: Pais
+  zip: Codi postal
+  latitude: Latitud
+  longitude: Longitud

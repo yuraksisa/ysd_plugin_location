@@ -3,3 +3,13 @@ content:
     description: Donde
 aspect:
   location: Dirección
+location:
+  street: Calle
+  number: Número
+  complement: Complemento
+  city: Ciudad
+  state: Provincia
+  country: País
+  zip: Código postal
+  latitude: Latitud
+  longitude: Longitud

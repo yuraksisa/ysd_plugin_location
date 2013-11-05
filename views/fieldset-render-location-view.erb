@@ -1,12 +1,15 @@
 <div class="location_template">
   <div class="content_data_block">
-    <h3 class="content_data_block_title"><%= t.content.content_location.description %></h3>
-    <% if show_title %>
     <div class="content_data_row">
+      <div id="location-map"></div>
+    </div>
+    <% if show_title %>
+    <div class="content_data_row top-margin">
       <a href="<%="/content/#{element.id}"%>"><%=element.title%></a>
     </div>
     <% end %>
-    <div class="content_data_row"><span data-icon="&#xe004;" aria-hidden="true">&nbsp;<%= element.location_full_address %></span></div>
-    <div class="content_data_row"><div id="location-map"></div></div>
+    <div class="content_data_row top-margin">
+       <span data-icon="&#xe004;" aria-hidden="true">&nbsp;<%= element.location_full_address %></span>
+    </div>
   </div>
 </div>

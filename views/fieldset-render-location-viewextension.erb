@@ -7,7 +7,13 @@ require(['jquery', 'YSDLocationViewer'],
         
      var location = {address : '<%=element.location_full_address%>',
                      title: '<%="#{element.title}"%>',
-                     description : '<%= "<h1>#{element.title}</h1> #{element.location_full_address}" %>'
+                     description : '<%= "<h1>#{element.title}</h1> #{element.location_full_address}" %>',
+                     latlng: <% if element.location_latitude and element.location_longitude%>
+                               new google.maps.LatLng(<%=element.location_latitude%>, 
+                                                      <%=element.location_longitude%>)
+                             <% else %>
+                               null
+                             <% end %>
                    };
                    
      var map = new LocationViewer('location-map');

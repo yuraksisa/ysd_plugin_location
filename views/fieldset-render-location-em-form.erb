@@ -1,30 +1,38 @@
         <div id="location_form">
           <div class="formrow">
-            <label for="location_street" class="fieldtitle">Street</label>
+            <label for="location_street" class="fieldtitle"><%=t.location.street%></label>
             <input type="text" maxlength="60" id="location_street" name="location_street" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_street %>" <%% } %> />
           </div>
           <div class="formrow">
-            <label for="location_number" class="fieldtitle">Number</label>
+            <label for="location_number" class="fieldtitle"><%=t.location.number%></label>
             <input type="text" maxlength="10" id="location_number" name="location_number" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_number %>" <%% } %> />
           </div>
           <div class="formrow">
-            <label for="location_complement" class="fieldtitle">Complement</label>
+            <label for="location_complement" class="fieldtitle"><%=t.location.complement%></label>
             <input type="text" maxlength="20" id="location_complement" name="location_complement" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_complement %>" <%% } %> />
           </div>
 <div class="formrow">
-            <label for="location_city" class="fieldtitle">City</label>
+            <label for="location_city" class="fieldtitle"><%=t.location.city%></label>
             <input type="text" maxlength="60" id="location_city" name="location_city" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_city %>" <%% } %> />
           </div>
           <div class="formrow">
-            <label for="location_state" class="fieldtitle">State</label>
+            <label for="location_state" class="fieldtitle"><%=t.location.state%></label>
             <input type="text" maxlength="60" id="location_state" name="location_state" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_state %>" <%% } %> />
           </div>
           <div class="formrow">
-            <label for="location_country" class="fieldtitle">Country</label>
+            <label for="location_country" class="fieldtitle"><%=t.location.country%></label>
             <input type="text" maxlength="50" id="location_country" name="location_country" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_country %>" <%% } %> />
           </div>
           <div class="formrow">
-            <label for="location_zip" class="fieldtitle">Zip</label>
+            <label for="location_zip" class="fieldtitle"><%=t.location.zip%></label>
             <input type="text" maxlength="10" id="location_zip" name="location_zip" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_zip %>" <%% } %> />
           </div>
+          <div class="formrow">
+            <label for="location_longitude" class="fieldtitle"><%=t.location.longitude%></label>
+            <input type="text" maxlength="20" id="location_zip" name="location_longitude" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_longitude %>" <%% } %> />
+          </div>
+          <div class="formrow">
+            <label for="location_latitude" class="fieldtitle"><%=t.location.latitude%></label>
+            <input type="text" maxlength="20" id="location_latitude" name="location_latitude" class="fieldcontrol" <%% if (entity) { %> value="<%%= entity.location_latitude %>" <%% } %> />
+          </div>                    
         </div>  

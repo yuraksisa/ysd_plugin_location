@@ -3,3 +3,13 @@ content:
     description: Where
 aspect:
   location: Location
+location:
+  street: Street
+  number: Number
+  complement: Complement
+  city: City
+  state: State
+  country: Country
+  zip: Zip
+  latitude: Latitude
+  longitude: Longitude
