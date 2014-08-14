@@ -8,7 +8,7 @@ require(['jquery', 'YSDLocationViewer'],
      var location = {address : '<%=element.location_full_address%>',
                      title: '<%="#{element.title}"%>',
                      description : '<%= "<h1>#{element.title}</h1> #{element.location_full_address}" %>',
-                     latlng: <% if element.location_latitude and element.location_longitude%>
+                     latlng: <% if element.location_latitude and element.location_latitude != 0 and element.location_longitude and element.location_longitude != 0 %>
                                new google.maps.LatLng(<%=element.location_latitude%>, 
                                                       <%=element.location_longitude%>)
                              <% else %>
